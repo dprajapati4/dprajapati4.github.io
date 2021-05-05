@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/dprajapati4.github.io/static/css/main.b5beb77c.chunk.css",
-    "main.js": "/dprajapati4.github.io/static/js/main.fc7d5b20.chunk.js",
-    "main.js.map": "/dprajapati4.github.io/static/js/main.fc7d5b20.chunk.js.map",
-    "runtime-main.js": "/dprajapati4.github.io/static/js/runtime-main.d95d985c.js",
-    "runtime-main.js.map": "/dprajapati4.github.io/static/js/runtime-main.d95d985c.js.map",
-    "static/js/2.d1fa3466.chunk.js": "/dprajapati4.github.io/static/js/2.d1fa3466.chunk.js",
-    "static/js/2.d1fa3466.chunk.js.map": "/dprajapati4.github.io/static/js/2.d1fa3466.chunk.js.map",
-    "static/js/3.35ad478a.chunk.js": "/dprajapati4.github.io/static/js/3.35ad478a.chunk.js",
-    "static/js/3.35ad478a.chunk.js.map": "/dprajapati4.github.io/static/js/3.35ad478a.chunk.js.map",
-    "index.html": "/dprajapati4.github.io/index.html",
-    "static/css/main.b5beb77c.chunk.css.map": "/dprajapati4.github.io/static/css/main.b5beb77c.chunk.css.map",
-    "static/js/2.d1fa3466.chunk.js.LICENSE.txt": "/dprajapati4.github.io/static/js/2.d1fa3466.chunk.js.LICENSE.txt",
-    "static/media/resume.4c4136d5.pdf": "/dprajapati4.github.io/static/media/resume.4c4136d5.pdf"
+    "main.css": "/static/css/main.b5beb77c.chunk.css",
+    "main.js": "/static/js/main.fc7d5b20.chunk.js",
+    "main.js.map": "/static/js/main.fc7d5b20.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.404e2b56.js",
+    "runtime-main.js.map": "/static/js/runtime-main.404e2b56.js.map",
+    "static/js/2.d1fa3466.chunk.js": "/static/js/2.d1fa3466.chunk.js",
+    "static/js/2.d1fa3466.chunk.js.map": "/static/js/2.d1fa3466.chunk.js.map",
+    "static/js/3.35ad478a.chunk.js": "/static/js/3.35ad478a.chunk.js",
+    "static/js/3.35ad478a.chunk.js.map": "/static/js/3.35ad478a.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.b5beb77c.chunk.css.map": "/static/css/main.b5beb77c.chunk.css.map",
+    "static/js/2.d1fa3466.chunk.js.LICENSE.txt": "/static/js/2.d1fa3466.chunk.js.LICENSE.txt",
+    "static/media/resume.4c4136d5.pdf": "/static/media/resume.4c4136d5.pdf"
   },
   "entrypoints": [
-    "static/js/runtime-main.d95d985c.js",
+    "static/js/runtime-main.404e2b56.js",
     "static/js/2.d1fa3466.chunk.js",
     "static/css/main.b5beb77c.chunk.css",
     "static/js/main.fc7d5b20.chunk.js"
