@@ -1,0 +1,47 @@
+import React from 'react';
+import pdf from '../data/resume.pdf';
+import { Nodes, Linkedin, Github, Medium, DocumentPdf } from 'grommet-icons';
+import { Anchor, Box, Footer, Text } from 'grommet';
+
+const Media = () => (
+  <Box direction="row" gap="xxsmall" justify="center">
+    <Anchor
+      a11yTitle="Connect with me on LinkedIn"
+      href="https://www.linkedin.com/in/deepprajapati/"
+      icon={<Linkedin  />}
+    />
+    <Anchor
+      a11yTitle="Checkout my work on Github"
+      href="https://www.github.com/dprajapati4"
+      icon={<Github />}
+    />
+    <Anchor
+      a11yTitle="Follow me on Medium"
+      href="https://dprajap2.medium.com/"
+      icon={<Medium />}
+    />
+     <Anchor
+      a11yTitle="See my resume"
+      href={pdf}
+          download="Prajapati_Deep_Resume.pdf"
+      icon={<DocumentPdf />}
+    />
+  </Box>
+);
+
+
+const Connect = () => {
+  return (
+    <Footer background="light-4" pad="small">
+      <Box align="center" direction="row" gap="xsmall">
+      <Nodes size="medium" />
+        <Text alignSelf="center" size="small">
+        Connect With Me
+        </Text>
+      </Box>
+      <Media />
+    </Footer>
+  );
+};
+
+export default Connect;

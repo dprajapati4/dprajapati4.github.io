@@ -1,11 +1,10 @@
 import React from 'react';
 import { BrowserRouter as Router, HashRouter, Route } from 'react-router-dom';
-import {Grommet} from 'grommet';
+import { Grommet, Box } from 'grommet';
 
-// import './App.css';
 import Home from './components/Home';
 import Navbar from './components/Navbar';
-import Footer from './components/Footer';
+import Connect from './components/Connect';
 import Projects from './components/Projects';
 import Resume from './components/Resume';
 
@@ -23,18 +22,21 @@ function App() {
   return (
     <HashRouter>
       <Grommet theme={theme}>
-
-      {/* <div className="App"> */}
         <Navbar />
 
-        <div className="middle">
+        <Box
+          justify="center"
+          align="center"
+          pad="xlarge"
+          background="linear-gradient(102.77deg, #865ED6 -9.18%, #18BAB9 209.09%)"
+
+        >
           <Route exact path="/" component={Home} />
           <Route exact path="/projects" component={Projects} />
           <Route exact path="/resume" component={Resume} />
-        </div>
+        </Box>
 
-        <Footer />
-      {/* </div> */}
+        <Connect />
       </Grommet>
     </HashRouter>
   );

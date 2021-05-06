@@ -1,10 +1,11 @@
 import React from 'react';
 import pdf from "../data/resume.pdf"
 import {Link} from "react-router-dom"
+import { Avatar, Anchor, Nav, Grommet, Header } from 'grommet';
 
 const Navbar = () => {
   return(
-    <header className="App-header">
+    <Header background="light-4" pad="small">
           <Link to="/">
           <h5>about</h5></Link>
           <Link to="/projects">
@@ -21,7 +22,7 @@ const Navbar = () => {
             </a>
             </Link>
 
-          </header>
+          </Header>
   )
 }
 
