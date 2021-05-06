@@ -9,12 +9,12 @@
   width: 100vw;
 }
 
-.Home {
+.middle {
   display: flex;
   flex-direction: column;
   text-align: center;
-  background-color:#41B3A3;
-  /* position: absolute; */
+  background-image:linear-gradient(#85DCB0, #41B3A3);
+  position: absolute;
 
 }
 
@@ -30,14 +30,14 @@
   position:sticky
 }
 
-.about-me {
+/* .middle {
   width: 55%;
   height: auto;
   display: flex;
   flex-flow: column wrap;
   align-self: center;
-  background-image:linear-gradient(#85DCB0, #41B3A3);
-}
+
+} */
 
 .connect {
   display: flex;
@@ -46,10 +46,19 @@
   justify-content: space-evenly;
   background-color:#C38D9E;
   position: fixed;
+  height: 5%;
   left: 0;
   bottom: 0;
   width: 100%;
 }
+
+/* .Projects {
+  width: 55%;
+  height: auto;
+  display: flex;
+  flex-flow: column wrap;
+  align-self: center;
+} */
 
 .codebrew {
   border:antiquewhite;

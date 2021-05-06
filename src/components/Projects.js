@@ -1,10 +1,8 @@
 import React from 'react';
 
-
 const Projects = () => {
   return(
     <div className="Projects">
-      TESTSTSTSTSTS
       <h1>Some things I have built</h1>
       <div className="ParksnRec">
         A tribute to my love for Parks and Recreation, a character Gif generator. Choose between Leslie, Ron, Anne and other main characters and generate a one line from the show.
@@ -18,7 +16,7 @@ const Projects = () => {
 
       </div>
     <div className="Scrapplr">
-      A progressive web application that allows you to document your trip on the go. Include photos, descriptions of your own and Google panoramic views and Google Map pinpoints.
+      Scrapplr is a progressive web application that allows you to document your trip on the go. Include photos, text, and Google panoramic views and track your trip with Google Map pinpoints.
 
     </div>
     </div>
