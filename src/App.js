@@ -28,6 +28,7 @@ function App() {
           justify="center"
           align="center"
           pad="xlarge"
+          overflow="auto"
           background="linear-gradient(102.77deg, #865ED6 -9.18%, #18BAB9 209.09%)"
 
         >

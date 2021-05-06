@@ -1,8 +1,9 @@
 import React from 'react';
+import { Box, Text } from 'grommet'
 
 const AboutMe = () => {
   return(
-    <div className="about-me">
+    <Text color="white">
     <h1> Deep Prajapati </h1>
     <h3> Hey, I'm Deep Prajapati!</h3>
     <h4>Who I am</h4>
@@ -25,10 +26,9 @@ const AboutMe = () => {
       disabilities.
     </p>
     <p>
-      I graduated from The Grace Hopper Program at Fullstack Academy
-      with the skills I needed to learn quickly and efficiently
+      I graduated from The Grace Hopper Program at Fullstack Academy and started my Software Engineer journey.
     </p>
-  </div>
+  </Text>
   )
 }
 
