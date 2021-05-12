@@ -68,7 +68,6 @@ const Resume = () => {
           List: 2013 - 2017 TRIO Scholar, Chi Alpha Epsilon National Honor
           Society (XAE)
         </Paragraph>
-
     </Box>
   );
 };

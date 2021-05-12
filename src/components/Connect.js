@@ -8,7 +8,7 @@ const Media = () => (
     <Anchor
       a11yTitle="Connect with me on LinkedIn"
       href="https://www.linkedin.com/in/deepprajapati/"
-      icon={<Linkedin  />}
+      icon={<Linkedin />}
     />
     <Anchor
       a11yTitle="Checkout my work on Github"
@@ -20,29 +20,26 @@ const Media = () => (
       href="https://dprajap2.medium.com/"
       icon={<Medium />}
     />
-     <Anchor
+    <Anchor
       a11yTitle="See my resume"
       href={pdf}
-          download="Prajapati_Deep_Resume.pdf"
+      download="Prajapati_Deep_Resume.pdf"
       icon={<DocumentPdf />}
     />
   </Box>
 );
 
-
 const Connect = () => {
   return (
-
-    <Footer background="#49434d" pad="small" >
+    <Footer background="#49434d" pad="small" border elevation="large" gap="large">
       <Box align="center" direction="row" gap="xsmall">
-      <Nodes size="medium" />
+        <Nodes size="medium" />
         <Text alignSelf="center" size="small">
-        Connect With Me
+          Connect With Me
         </Text>
       </Box>
       <Media />
-  </Footer>
-
+    </Footer>
   );
 };
 

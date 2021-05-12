@@ -16,8 +16,8 @@ import {
 
 const AboutMe = () => {
   return (
-    <Box height="large" width="large" pad="xsmall">
-      <Text color="white" pad="medium">
+    <Box>
+
         <Heading margin="45px">
           Hey, I'm Deep Prajapati!
           <UserFemale size="large" />
@@ -55,7 +55,7 @@ const AboutMe = () => {
           <Gamepad size="large" /> Playing Animal Crossing New Horizons
         </Box>
 
-      </Text>
+
     </Box>
   );
 };

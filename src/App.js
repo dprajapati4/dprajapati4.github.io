@@ -76,12 +76,12 @@ function App() {
         <Box>
           <Navbar />
 
-          <Box responsive="true" wrap="true" fill align="center" >
+          <Box height="xlarge" width="xlarge" pad="xsmall" alignSelf="center">
             <Route exact path="/" component={AboutMe} />
             <Route exact path="/projects" component={Projects} />
             <Route exact path="/resume" component={Resume} />
           </Box>
-        <Connect />
+          <Connect />
         </Box>
       </Grommet>
     </HashRouter>
