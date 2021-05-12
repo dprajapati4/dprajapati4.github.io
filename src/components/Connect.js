@@ -32,7 +32,8 @@ const Media = () => (
 
 const Connect = () => {
   return (
-    <Footer background="#49434d" pad="small">
+
+    <Footer background="#49434d" pad="small" >
       <Box align="center" direction="row" gap="xsmall">
       <Nodes size="medium" />
         <Text alignSelf="center" size="small">
@@ -40,7 +41,8 @@ const Connect = () => {
         </Text>
       </Box>
       <Media />
-    </Footer>
+  </Footer>
+
   );
 };
 

@@ -1,6 +1,7 @@
-/* body, html {
-  margin: 0px;
-  padding: 0px; */
-  /* background-color: #ededed;
-  font-family: 'Trebuchet MS'; */
-/* } */
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+  background:linear-gradient(102.77deg, #865ED6 -9.18%, #18BAB9 209.09%)
+}
