@@ -15,6 +15,21 @@ const theme = {
       size: '18px',
       height: '20px',
     },
+    // carousel: {
+    //   animation: {
+    //     duration: 400,
+    //     pad: 'small',
+    //   },
+    //   icons: {
+    //     color:"blue",
+
+    //   },
+    //   disabled: {
+    //     icons: {
+    //       color:"grey"
+    //     },
+    //   },
+  
   },
 };
 
@@ -76,7 +91,7 @@ function App() {
         <Box>
           <Navbar />
 
-          <Box height="xlarge" width="xlarge" pad="xsmall" alignSelf="center">
+          <Box height="large" width="large" pad="xsmall" alignSelf="center">
             <Route exact path="/" component={AboutMe} />
             <Route exact path="/projects" component={Projects} />
             <Route exact path="/resume" component={Resume} />
