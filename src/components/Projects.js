@@ -1,31 +1,25 @@
-import React from 'react';
-import { Box, Card, Image, Button, Carousel } from 'grommet';
-import { Linkedin, Github } from 'grommet-icons';
+import React, { useState } from 'react';
+import { Box, Anchor, Image, Button, Carousel, ThemeContext, Heading } from 'grommet';
+import { Link, Github, Expand, CaretNext, Js,Reactjs,Html5,Css3, Node } from 'grommet-icons';
 
-const carouselTheme = {
-  carousel: {
-    animation: {
-      duration: 400,
-      pad: 'small',
-    },
-    icons: {
-      color:"blue",
+const techPnR = ["React.js", "Node.js", "Html","CSS", "Giphy API"]
 
-    },
-    disabled: {
-      icons: {
-        color:"grey"
-      },
-    },
-  },
-};
 
 const Projects = ({ controls, ...rest }) => {
+
+  const [Link, setLink] = useState({
+    github:"https://github.com/dprajapati4/parks-n-recs-gif-app",
+    link:"https://deeps-personal-website.s3.us-east-2.amazonaws.com/Scrapplr.gif",
+    website:""
+  })
+
   return (
-    <Box pad="small" gap="large">
+    <Box pad="small" gap="small">
       <h1>Some things I have built</h1>
-      <Carousel theme={carouselTheme} controls={controls} {...rest}>
-        <Box gap="medium">
+      <Carousel controls={controls} {...rest}
+      >
+        <Box gap="xxsmall" >
+          <Heading color="#3D138D"level="4"> Parks and Recreation Gif Generator</Heading>
           A tribute to my love for Parks and Recreation, a character Gif
           generator. Choose between Leslie, Ron, Anne and other main characters
           and generate a gif from the show.
@@ -35,6 +29,18 @@ const Projects = ({ controls, ...rest }) => {
             height="large"
             fit="contain"
           />
+          <Box pad="medium"gap="medium"direction="row">
+
+          {techPnR.map((tech)=>{
+            return (
+              <Box gap="medium"direction='row'>
+                <CaretNext/>
+                {tech}
+              </Box>
+            )
+          })}
+
+          </Box>
         </Box>
 
         <Box gap="medium">
@@ -72,9 +78,21 @@ const Projects = ({ controls, ...rest }) => {
           />
         </Box>
 
-        {/* <Button>Github</Button>
-        <Button>Demo</Button> */}
       </Carousel>
+      <Box direction="row" gap="small">
+        <Anchor
+          a11yTitle="Github link to Parks and Recreation repo"
+          href="https://github.com/dprajapati4/parks-n-recs-gif-app"
+          icon={<Github />}
+        />
+        <Anchor
+          a11yTitle="Full screen gif demo of the website"
+          href="https://deeps-personal-website.s3.us-east-2.amazonaws.com/Parks+and+Rec+Gif.gif"
+          icon={<Expand />}
+        />
+
+
+      </Box>
     </Box>
   );
 };
