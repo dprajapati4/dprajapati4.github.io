@@ -32,14 +32,13 @@ const Projects = ({ controls, ...rest }) => {
   });
 
   return (
-    <Box height="large"pad="xxsmall">
-      <Heading level={4} pad="xxsmall">Some things I have built</Heading>
+    <Box >
+      <Heading margin="none"level={4} pad="large">Some things I have built</Heading>
       <Carousel controls={controls} {...rest}>
         {projectData.map((project) => {
           return (
             <Box gap="xxsmall">
-              <Heading color="#3D138D" level="4">
-                {' '}
+              <Heading margin="none"color="#3D138D" level="4">
                 {project.title}
               </Heading>
               {project.description}

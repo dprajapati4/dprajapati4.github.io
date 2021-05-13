@@ -20,18 +20,16 @@ const theme = {
         duration: 400,
       },
       icons: {
-        color:"blue",
-
+        color: 'blue',
       },
       disabled: {
         icons: {
-          color:"grey"
+          color: 'grey',
         },
       },
     },
-  }
+  },
 };
-
 
 function App() {
   return (
@@ -42,6 +40,7 @@ function App() {
 
           <Box height="large" width="large" pad="xsmall" alignSelf="center">
             <Route exact path="/" component={AboutMe} />
+            <Route exact path="/me" component={AboutMe} />
             <Route exact path="/projects" component={Projects} />
             <Route exact path="/resume" component={Resume} />
           </Box>
