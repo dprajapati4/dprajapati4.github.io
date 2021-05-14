@@ -3,39 +3,16 @@ import { Box, Text, Card, Heading, Paragraph } from 'grommet';
 import { Js, Reactjs, Node, Aid, Test, System } from 'grommet-icons';
 const Resume = () => {
   return (
-    <Box >
+    <Box  >
       <Heading margin="45px">My Resume </Heading>
 
         <Heading>TECHNICAL SKILLS</Heading>
         <Paragraph>
           Proficient: Javascript, Node.js, Express, React, Redux, Sequelize,
-          PostgreSQL, HTML5, CSS, RESTful APIs, Git, Github Knowledgeable:
-          Firebase,Mocha, Chai, Jasmine, Webpack, Socket.io, OAuth,
+          PostgreSQL, HTML5, CSS, RESTful APIs, Git, Github
+          Knowledgeable: Firebase,Mocha, Chai, Jasmine, Webpack, Socket.io, OAuth,
         </Paragraph>
-        <Heading>PROJECTS </Heading>
-        <Paragraph>
-          Scrapplr | Software Developer | https://scrapplr.web.app/ March-April
-          2021 A progressive web application for scrapbooking. Create a virtual
-          scrapbook by uploading photos and descriptions to document travels and
-          life events. Add panoramic views from Google Places and generate a map
-          of all visited locations. Built a non-relational database in Cloud
-          Firestore to handle user updates and queries in real-time Developed
-          backend routes to fetch data from Google Maps, Places and Geolocation
-          APIs Designed an intuitive and responsive web application by creating
-          grid layouts and swipeable pages Node.js, Cloud Firestore,Sockets.io.
-          OAuth, REACT, Google Maps, Places and Geolocation API, Grommet UI Cafe
-          Code Brew | Sole Developer | https://cafe-code-brew.herokuapp.com
-          March 2021 A virtual, personalizable cafe experience. Choose your cafe
-          scenery, music station , order cafe items from locations near you, and
-          invite your friend to join you at your virtual cafe. Designed a
-          creative and interactive front-end application using React, Node.Js,
-          Javascript,HTML, CSS and Semantic UI that allows a user to choose
-          between different cafe ambiences and music stations Utilized Yelp API
-          to generate real cafe data near the users location so the user can
-          review cafes and order food and drinks Utilized Twilio API to send
-          text messages to other users with a link that allows them to join the
-          user at the cafe
-        </Paragraph>
+
         <Heading>PROFESSIONAL EXPERIENCE </Heading>
         Psychometrician, Comprehensive Consultations Psychological Services
         Dr.Sanam Hafeez Psy D. February 2019 - January 2021

@@ -12,7 +12,7 @@ const theme = {
   global: {
     font: {
       family: 'Arvo',
-      size: '18px',
+      size: '15px',
       height: '20px',
     },
     carousel: {
@@ -35,17 +35,19 @@ function App() {
   return (
     <HashRouter>
       <Grommet theme={theme}>
-        <Box>
+        <div className="container">
+          <Box>
           <Navbar />
 
-          <Box height="large" width="large" pad="xsmall" alignSelf="center">
+          <Box  height={{"min":"100vh"}} width="large" pad="xsmall" alignSelf="center" border flex elevation="large" margin="50px" >
             <Route exact path="/" component={AboutMe} />
             <Route exact path="/me" component={AboutMe} />
             <Route exact path="/projects" component={Projects} />
             <Route exact path="/resume" component={Resume} />
           </Box>
           <Connect />
-        </Box>
+          </Box>
+        </div>
       </Grommet>
     </HashRouter>
   );

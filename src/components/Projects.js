@@ -4,6 +4,7 @@ import {
   Anchor,
   Image,
   Button,
+  Text,
   Carousel,
   ThemeContext,
   Heading,
@@ -32,8 +33,8 @@ const Projects = ({ controls, ...rest }) => {
   });
 
   return (
-    <Box >
-      <Heading margin="none"level={4} pad="large">Some things I have built</Heading>
+    <Box gap="xsmall" >
+      <Heading level={4} gap="small" pad="large">Some things I have built</Heading>
       <Carousel controls={controls} {...rest}>
         {projectData.map((project) => {
           return (
@@ -41,23 +42,28 @@ const Projects = ({ controls, ...rest }) => {
               <Heading margin="none"color="#3D138D" level="4">
                 {project.title}
               </Heading>
+              <Text size="small">
               {project.description}
+              </Text>
+              <Box pad="small" gap="xsmall" direction="row">
+                {project.technology.map((tech) => {
+                  return (
+                    <Box flex="shrink" direction="row" alignContent="between">
+                      <CaretNext size="small" />
+                      <Text size="small">
+              {tech}
+              </Text>
+                    </Box>
+                  );
+                })}
+              </Box>
               <Image
                 src={project.url}
                 alt={project.alt}
                 height="large"
                 fit="contain"
               />
-              <Box pad="large" gap="xsmall" direction="row">
-                {project.technology.map((tech) => {
-                  return (
-                    <Box gap="xxsmall" direction="row" align="center">
-                      <CaretNext />
-                      {tech}
-                    </Box>
-                  );
-                })}
-              </Box>
+
             </Box>
           );
         })}

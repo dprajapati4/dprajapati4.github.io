@@ -16,7 +16,7 @@ import {
 
 const AboutMe = () => {
   return (
-    <Box>
+    <>
 
         <Heading margin="45px">
           Hey, I'm Deep Prajapati!
@@ -44,19 +44,24 @@ const AboutMe = () => {
           <Certificate size="large" />I graduated from The Grace Hopper Program
           at Fullstack Academy and started my Software Engineer journey.
         </Box>
-        <Heading size="large" level="4"> When I am not coding</Heading>
+        <Heading size="large" level="4"> What technologies I have been using </Heading>
         <Box align="center" direction="row" gap="small" pad="small">
-          <Toast size="large" /> You can find me trying trendy foods.
-        </Box>
+
+          </Box>
+
+        <Heading size="large" level="4"> When I am not coding you can find me</Heading>
         <Box align="center" direction="row" gap="small" pad="small">
+          <Toast size="large" />Trying trendy foods.
+
+
           <Camera size="large" /> Exploring new places and taking photos.
-        </Box>
-        <Box align="center" direction="row" gap="small" pad="small">
+
+
           <Gamepad size="large" /> Playing Animal Crossing New Horizons
         </Box>
 
 
-    </Box>
+    </>
   );
 };
 
