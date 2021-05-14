@@ -1,5 +1,5 @@
 import React from 'react';
-import { HashRouter, Route } from 'react-router-dom';
+import { HashRouter, Route, Switch } from 'react-router-dom';
 import { Grommet, Box } from 'grommet';
 
 import Navbar from './components/Navbar';
@@ -35,19 +35,18 @@ function App() {
   return (
     <HashRouter>
       <Grommet theme={theme}>
-        <div className="container">
-          <Box>
+        <Box responsive flex alignContent="stretch">
           <Navbar />
-
-          <Box  height={{"min":"100vh"}} width="large" pad="xsmall" alignSelf="center" border flex elevation="large" margin="50px" >
-            <Route exact path="/" component={AboutMe} />
-            <Route exact path="/me" component={AboutMe} />
-            <Route exact path="/projects" component={Projects} />
-            <Route exact path="/resume" component={Resume} />
+          <Box border margin="auto" width="65%" padding="10px" >
+            <Switch>
+              <Route exact path="/" component={AboutMe} />
+              <Route exact path="/me" component={AboutMe} />
+              <Route exact path="/projects" component={Projects} />
+              <Route exact path="/resume" component={Resume} />
+            </Switch>
           </Box>
           <Connect />
-          </Box>
-        </div>
+        </Box>
       </Grommet>
     </HashRouter>
   );
