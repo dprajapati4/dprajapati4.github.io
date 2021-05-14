@@ -20,7 +20,7 @@ const theme = {
         duration: 400,
       },
       icons: {
-        color: 'blue',
+        color: 'white',
       },
       disabled: {
         icons: {
@@ -37,7 +37,11 @@ function App() {
       <Grommet theme={theme}>
         <Box responsive flex alignContent="stretch">
           <Navbar />
-          <Box border margin="auto" width="65%" padding="10px" >
+          <Box
+          // border margin="auto" width="65%" padding="10px"
+          width="large" pad="xsmall" alignSelf="center" border flex elevation="large" margin="50px"
+
+          >
             <Switch>
               <Route exact path="/" component={AboutMe} />
               <Route exact path="/me" component={AboutMe} />

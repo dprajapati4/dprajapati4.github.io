@@ -32,7 +32,9 @@ const Media = () => (
 const Connect = () => {
   return (
     <div className="footer">
-    <Footer background="#49434d" pad="small" border elevation="large" gap="large">
+    <Footer
+    // background="#49434d"
+    pad="small"  elevation="large" gap="large">
       <Box align="center" direction="column" gap="xsmall">
         <Nodes size="medium" />
         <Text alignSelf="center" size="small">

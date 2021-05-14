@@ -17,7 +17,13 @@ const titles = ['me', 'projects', 'resume', 'connect'];
 
 const Navbar = () => {
   return (
-    <Header background="#49434d" pad="medium">
+    <Header
+    //  background="#f3f0f5"
+     pad="small"
+     elevation="large"
+
+
+     >
       {titles.map((title) => {
         return <Link to={`/${title}`}> {title}</Link>;
       })}
