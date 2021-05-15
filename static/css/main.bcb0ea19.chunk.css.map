@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/index.css"],"names":[],"mappings":"AACA,UAEG,oEAEH","file":"main.bcb0ea19.chunk.css","sourcesContent":["\nhtml,body {\n  \n   background:linear-gradient(102.77deg, #acc5ec -9.18%, #C5796D 209.09%);\n  /* overflow: hidden; */\n}\n\n/* #root {\n  display: flex;\n\n  flex-direction: column;\n} */\n\n"]}
