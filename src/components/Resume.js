@@ -1,50 +1,74 @@
 import React from 'react';
-import { Box, Text, Card, Heading, Paragraph } from 'grommet';
-import { Js, Reactjs, Node, Aid, Test, System } from 'grommet-icons';
+import { Box, Text, Card, Heading, Paragraph, List } from 'grommet';
+import { Grow, Js, Reactjs, Node, Aid, Test, System } from 'grommet-icons';
+
+import experienceData from '../data/experienceData';
 const Resume = () => {
   return (
-    <Box  >
-      <Heading margin="45px">My Resume </Heading>
+    <Box>
+      <Heading level="3" flex alignSelf="center">
 
-        <Heading>TECHNICAL SKILLS</Heading>
-        <Paragraph>
+        My Resume
+      </Heading>
+        <Heading level="3">TECHNICAL SKILLS</Heading>
+      <Card pad="15px" elevation="large">
+        <Text size="small">
           Proficient: Javascript, Node.js, Express, React, Redux, Sequelize,
           PostgreSQL, HTML5, CSS, RESTful APIs, Git, Github
-          Knowledgeable: Firebase,Mocha, Chai, Jasmine, Webpack, Socket.io, OAuth,
-        </Paragraph>
+          <br />
+          Knowledgeable: Firebase,Mocha, Chai, Jasmine, Webpack, Socket.io,
+          OAuth,
+        </Text>
+      </Card>
 
-        <Heading>PROFESSIONAL EXPERIENCE </Heading>
-        Psychometrician, Comprehensive Consultations Psychological Services
-        Dr.Sanam Hafeez Psy D. February 2019 - January 2021
-        <Paragraph>
-          Scored and documented between 2-3 complete neuropsychological and
-          psycho-educational patient testing a day Mentored psychometrician
-          interns and trained them to understand and score psychological tests
-          Collaborated with clinical staff and patients to develop between 4-5
-          comprehensive reports per week detailing patient history, psychometric
-          data and treatment plans Research Assistant, NYU College of Dentistry
-          COBRA Lab, Dr. Paulo Coelho - Biomaterials January 2018 - January 2019
-          Trained to use 3D printing, microCT imaging, nano-indentation
-          technology and read histological analysis Prepared polished
-          histological section specimen samples for histomorphometry (BIC/BAFO)
-          Maintained between 5 - 10 cell lines to be used by other lab members
-          Office Assistant, Binghamton University Anthropology Department August
-          2014 - May 2017 Answered phone calls, greeted visitors and aided
-          students visiting the Anthropology Department Successfully organized
-          and prepared for monthly speaker events and faculty meetings.
-          Maintained over 50 student files per semester and transitioned the
-          documents onto a web-based data-entry application
-        </Paragraph>
-        <Heading>EDUCATION</Heading>
-        <Paragraph>
-          Grace Hopper Program at Fullstack Academy, New York, NY Certificate in
-          Software Engineering January 2021 - April 2021 17-Week full stack
-          JavaScript (ES6) web development immersive for women+. Binghamton
-          University, Binghamton, NY Bachelors of Science in Integrative
-          Neuroscience GPA: 3.5 August 2013 - May 2017 Honors/Awards: Dean's
-          List: 2013 - 2017 TRIO Scholar, Chi Alpha Epsilon National Honor
-          Society (XAE)
-        </Paragraph>
+      <Heading level="3">PROFESSIONAL EXPERIENCE </Heading>
+      {experienceData.map((experience) => {
+        return (
+          <Card pad="15px" elevation="large">
+            {experience.position}
+            <br />
+            {experience.location}
+            <List
+              border={false}
+              key={experience.position}
+              data={experience.role}
+            ></List>
+          </Card>
+        );
+      })}
+      <Heading level="3">EDUCATION</Heading>
+      <Card pad="15px" elevation="large">
+
+        <Text size="small">
+        Grace Hopper Program at Fullstack Academy, New York NY
+          <br />
+          Certificate in Software Engineering January 2021 - April 2021
+          <List
+              border={false}
+              data={["17-Week full stack JavaScript (ES6) web development immersive for women+."]}
+            >
+
+            </List>
+        </Text>
+      </Card>
+      <Card pad="15px" elevation="large">
+
+        <Text size="small">
+        Binghamton University, Binghamton, NY
+        <br />
+        Bachelors of Science in
+        Integrative Neuroscience August 2013 - May 2017
+        <br/>
+        GPA: 3.5
+
+          <List
+              border={false}
+              data={["Dean's List: 2013 - 2017,TRIO Scholar, Chi Alpha Epsilon National Honor Society (XAE)"]}
+            >
+
+            </List>
+        </Text>
+      </Card>
     </Box>
   );
 };

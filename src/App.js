@@ -35,7 +35,7 @@ function App() {
   return (
     <HashRouter>
       <Grommet theme={theme}>
-        <Box responsive flex alignContent="stretch">
+        <Box responsive  >
           <Navbar />
           <Box
           // border margin="auto" width="65%" padding="10px"

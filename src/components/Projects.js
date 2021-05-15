@@ -8,6 +8,7 @@ import {
   Carousel,
   ThemeContext,
   Heading,
+  Grommet,
 } from 'grommet';
 import {
   Link,
@@ -25,6 +26,28 @@ import projectData from '../data/projectData';
 
 const techPnR = ['React.js', 'Node.js', 'Html', 'CSS', 'Giphy API'];
 
+const customTheme = {
+  carousel: {
+    animation: {
+      duration: 400,
+    },
+    chromatic: { disable: true },
+    icons: {
+      color: 'brand',
+    },
+
+    disabled: {
+      icons: {
+        color: 'grey',
+      },
+    },
+  },
+};
+
+
+
+
+
 const Projects = ({ controls, ...rest }) => {
   const [Link, setLink] = useState({
     github: 'https://github.com/dprajapati4/parks-n-recs-gif-app',
@@ -33,26 +56,26 @@ const Projects = ({ controls, ...rest }) => {
   });
 
   return (
-    <Box gap="xsmall" >
-      <Heading level={4} gap="small" pad="large">Some things I have built</Heading>
+    <Grommet theme={customTheme}>
+    <Box margin="10px" gap="small">
+      <Heading level={4} gap="small" pad="large">
+        Some things I have built
+      </Heading>
       <Carousel controls={controls} {...rest}>
         {projectData.map((project) => {
           return (
-            <Box gap="xxsmall">
-              <Heading margin="none"color="#3D138D" level="4">
+            <Box height="80vh" >
+            <Box gap="xsmall" background-color="neutral-1" >
+              <Heading margin="none" color="#3D138D" level="4">
                 {project.title}
               </Heading>
-              <Text size="small">
-              {project.description}
-              </Text>
-              <Box pad="small" gap="xsmall" direction="row">
+              <Text size="small">{project.description}</Text>
+              <Box pad="xsmall" gap="xsmall" direction="row">
                 {project.technology.map((tech) => {
                   return (
                     <Box flex="shrink" direction="row" alignContent="between">
-                      <CaretNext size="small" />
-                      <Text size="small">
-              {tech}
-              </Text>
+                      <CaretNext color="black" size="small" />
+                      <Text size="small">{tech}</Text>
                     </Box>
                   );
                 })}
@@ -63,7 +86,7 @@ const Projects = ({ controls, ...rest }) => {
                 height="large"
                 fit="contain"
               />
-
+            </Box>
             </Box>
           );
         })}
@@ -81,7 +104,12 @@ const Projects = ({ controls, ...rest }) => {
         />
       </Box>
     </Box>
+    </Grommet>
   );
+};
+
+Projects.parameters = {
+  chromatic: { disable: false },
 };
 
 export default Projects;

@@ -31,20 +31,20 @@ const AboutMe = () => {
         Where I come from
       </Heading>
       <Box align="center" direction="row" gap="small" pad="small">
-        <Inherit size="large" color="green" /> Curious about the biology and psychology of the
+        <Inherit size="large"  /> Curious about the biology and psychology of the
         human mind I graduated with a BSc in Neuroscience.
       </Box>
       <Box align="center" direction="row" gap="small" pad="small">
-        <Test size="large" color="black" /> As a Research Assistant, I worked with 3D printed
+        <Test size="large"  /> As a Research Assistant, I worked with 3D printed
         bioceramic scaffolds that aimed to augement bone growth.
       </Box>
       <Box align="center" direction="row" gap="small" pad="small">
-        <Aid color="red" size="large" /> I analyzed psychometric scales and statistical data
+        <Aid  size="large" /> I analyzed psychometric scales and statistical data
         as a Psychometrician to help diagnose psychological issues and learning
         disabilities.
       </Box>
       <Box align="center" direction="row" gap="small" pad="small">
-        <Certificate  color ="gold" size="large" />I graduated from The Grace Hopper Program at
+        <Certificate size="large" />I graduated from The Grace Hopper Program at
         Fullstack Academy and started my Software Engineer journey.
       </Box>
       <Heading size="large" level="4">
