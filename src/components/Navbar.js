@@ -5,7 +5,7 @@ import {
   Avatar,
   Anchor,
   Nav,
-  Text,
+  Box,
   Header,
   Heading,
   SkipLinkTarget,
@@ -13,20 +13,35 @@ import {
   SkipLinks,
 } from 'grommet';
 
-const titles = ['me', 'projects', 'resume', 'connect'];
+// const titles = ['me', 'projects', 'resume'];
+
+const titles = [
+  { label: 'me', href: '#' },
+  { label: 'project', href: '#' },
+  { label: 'resume', href: '#' },
+  // { label: 'REACT', href: '#' },
+]
 
 const Navbar = () => {
   return (
     <Header
-    //  background="#f3f0f5"
      pad="small"
      elevation="large"
-
-
      >
-      {titles.map((title) => {
+        <Box direction="row" align="center" gap="small">
+        <Avatar src={`${process.env.PUBLIC_URL}/assets/photo.png}`} />
+        <Anchor color="brand" href="https://github.com/dprajapati4 ">
+          Deep Prajapati
+        </Anchor>
+      </Box>
+       <Nav direction="row">
+        {titles.map(item => (
+          <Anchor href={item.href} label={item.label} key={item.label} />
+        ))}
+      </Nav>
+      {/* {titles.map((title) => {
         return <Link to={`/${title}`}> {title}</Link>;
-      })}
+      })} */}
     </Header>
   );
 };

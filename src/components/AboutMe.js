@@ -20,7 +20,7 @@ const backEnd = ['NodeJS', 'Express', 'PostgreSQL', 'Firebase'];
 
 const AboutMe = () => {
   return (
-    <Box>
+    <Box  fill>
       <Heading margin="45px">
         Hey, I'm Deep Prajapati!
         <UserFemale size="large" />
@@ -34,21 +34,13 @@ const AboutMe = () => {
       <Heading size="large" level="4">
         What technologies I have been using
       </Heading>
-      <Box direction="row" gap="large" justify="around"  >
-        <Box justify="center" >
-          Front End
-        </Box>
-        <Box justify="around" >
-          Back End
-        </Box>
-        </Box>
-        <Box direction="row" justify="around">
-        <Box >
-          JavaScript , ReactJS , Redux , HTML , CSS
-        </Box>
-        <Box >
-        NodeJS, Express, PostgreSQL, Firebase
-        </Box>
+      <Box direction="row" gap="large" justify="around">
+        <Box justify="center">Front End</Box>
+        <Box justify="around">Back End</Box>
+      </Box>
+      <Box direction="row" justify="around">
+        <Box>JavaScript , ReactJS , Redux , HTML , CSS</Box>
+        <Box>NodeJS, Express, PostgreSQL, Firebase</Box>
       </Box>
 
       <Heading size="large" level="4">

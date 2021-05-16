@@ -49,7 +49,7 @@ const customTheme = {
 const Projects = ({ controls, ...rest }) => {
   const [Link, setLink] = useState({
     github: 'https://github.com/dprajapati4/parks-n-recs-gif-app',
-    link: 'https://deeps-personal-website.s3.us-east-2.amazonaws.com/Scrapplr.gif',
+    // link: 'https://deeps-personal-website.s3.us-east-2.amazonaws.com/Scrapplr.gif',
     website: '',
   });
 

@@ -1,12 +1,24 @@
 import React from 'react';
-import { HashRouter, Route, Switch } from 'react-router-dom';
-import { Grommet, Box } from 'grommet';
+import { HashRouter, Route, Switch,Link } from 'react-router-dom';
+import {
+  Grommet,
+  Box,
+  SkipLinkTarget,
+  SkipLink,
+  SkipLinks,
+  Avatar,
+  Anchor,
+  Nav,
+  Header,
 
-import Navbar from './components/Navbar';
+} from 'grommet';
+
+// import Navbar from './components/Navbar';
 import Connect from './components/Connect';
 import Projects from './components/Projects';
 import Resume from './components/Resume';
 import AboutMe from './components/AboutMe';
+import Contact from './components/Contact';
 
 const theme = {
   global: {
@@ -31,25 +43,57 @@ const theme = {
   },
 };
 
+const titles = [
+  { label: 'me' },
+  { label: 'projects' },
+  { label: 'resume' },
+];
+
 function App() {
   return (
     <HashRouter>
       <Grommet theme={theme}>
-        <Box responsive  >
-          <Navbar />
+        <SkipLinks>
+          <SkipLink id="main" label="Main Content" />
+          <SkipLink id="footer" label="Footer" />
+        </SkipLinks>
+        <Box fill>
+          <Header pad="small" elevation="large">
+            <Box direction="row" align="center" gap="small">
+              <Avatar src={`${process.env.PUBLIC_URL}/assets/photo.png}`} />
+              <Anchor color="brand" href="https://github.com/dprajapati4 ">
+                Deep Prajapati
+              </Anchor>
+            </Box>
+            <Nav direction="row">
+              {titles.map((item) => (
+                <Link to={`/${item.label}`}> {item.label}</Link>
+                // <Anchor href={item.href} label={item.label} key={item.label} />
+              ))}
+            </Nav>
+          </Header>
           <Box
-          // border margin="auto" width="65%" padding="10px"
-          width="large" pad="xsmall" alignSelf="center" border flex elevation="large" margin="50px"
-
+            // border margin="auto" width="65%" padding="10px"
+            width="large"
+            pad="xsmall"
+            alignSelf="center"
+            border
+            flex
+            elevation="large"
+            margin="50px"
           >
             <Switch>
               <Route exact path="/" component={AboutMe} />
               <Route exact path="/me" component={AboutMe} />
               <Route exact path="/projects" component={Projects} />
               <Route exact path="/resume" component={Resume} />
+              <Route exact path="/contact" component={Contact} />
             </Switch>
           </Box>
+          <Box>
+          <SkipLinkTarget id="connect" />
           <Connect />
+          </Box>
         </Box>
       </Grommet>
     </HashRouter>
