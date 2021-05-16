@@ -46,8 +46,6 @@ const customTheme = {
 
 
 
-
-
 const Projects = ({ controls, ...rest }) => {
   const [Link, setLink] = useState({
     github: 'https://github.com/dprajapati4/parks-n-recs-gif-app',
@@ -57,7 +55,7 @@ const Projects = ({ controls, ...rest }) => {
 
   return (
     <Grommet theme={customTheme}>
-    <Box margin="10px" gap="small">
+    <Box margin="10px" gap="small" justify="around">
       <Heading level={4} gap="small" pad="large">
         Some things I have built
       </Heading>
