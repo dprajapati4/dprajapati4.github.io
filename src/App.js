@@ -46,7 +46,7 @@ const theme = {
 const titles = [
   { label: 'me' },
   { label: 'projects' },
-  { label: 'resume' },
+  { label: 'resume' }
 ];
 
 function App() {
