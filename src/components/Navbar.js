@@ -8,18 +8,14 @@ import {
   Box,
   Header,
   Heading,
-  SkipLinkTarget,
-  SkipLink,
-  SkipLinks,
+
 } from 'grommet';
 
-// const titles = ['me', 'projects', 'resume'];
 
 const titles = [
   { label: 'me', href: '#' },
   { label: 'project', href: '#' },
   { label: 'resume', href: '#' },
-  // { label: 'REACT', href: '#' },
 ]
 
 const Navbar = () => {
@@ -29,7 +25,7 @@ const Navbar = () => {
      elevation="large"
      >
         <Box direction="row" align="center" gap="small">
-        <Avatar src={`${process.env.PUBLIC_URL}/assets/photo.png}`} />
+        <Avatar src={`${process.env.PUBLIC_URL}/assets/DeepPhoto.png`}/>
         <Anchor color="brand" href="https://github.com/dprajapati4 ">
           Deep Prajapati
         </Anchor>
@@ -39,9 +35,6 @@ const Navbar = () => {
           <Anchor href={item.href} label={item.label} key={item.label} />
         ))}
       </Nav>
-      {/* {titles.map((title) => {
-        return <Link to={`/${title}`}> {title}</Link>;
-      })} */}
     </Header>
   );
 };

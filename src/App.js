@@ -19,6 +19,7 @@ import Projects from './components/Projects';
 import Resume from './components/Resume';
 import AboutMe from './components/AboutMe';
 import Contact from './components/Contact';
+import Navbar from './components/Navbar';
 
 const theme = {
   global: {
@@ -60,18 +61,20 @@ function App() {
         <Box fill>
           <Header pad="small" elevation="large">
             <Box direction="row" align="center" gap="small">
-              <Avatar src={`${process.env.PUBLIC_URL}/assets/photo.png}`} />
+              <Avatar src={`${process.env.PUBLIC_URL}/assets/DeepPhoto.png`} />
               <Anchor color="brand" href="https://github.com/dprajapati4 ">
                 Deep Prajapati
               </Anchor>
             </Box>
             <Nav direction="row">
-              {titles.map((item) => (
-                <Link to={`/${item.label}`}> {item.label}</Link>
-                // <Anchor href={item.href} label={item.label} key={item.label} />
+              {titles.map((title) => (
+                <Link to={`/${title.label}`}> {title.label}</Link>
               ))}
             </Nav>
           </Header>
+
+
+
           <Box
             // border margin="auto" width="65%" padding="10px"
             width="large"
