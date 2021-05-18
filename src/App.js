@@ -23,6 +23,7 @@ import Navbar from './components/Navbar';
 
 const theme = {
   global: {
+    
     font: {
       family: 'Arvo',
       size: '15px',
@@ -50,6 +51,7 @@ const titles = [
   { label: 'resume' }
 ];
 
+
 function App() {
   return (
     <HashRouter>
@@ -58,7 +60,7 @@ function App() {
           <SkipLink id="main" label="Main Content" />
           <SkipLink id="footer" label="Footer" />
         </SkipLinks>
-        <Box fill>
+        <Box fill background="url(background)">
           <Header pad="small" elevation="large">
             <Box direction="row" align="center" gap="small">
               <Avatar src={`${process.env.PUBLIC_URL}/assets/DeepPhoto.png`} />

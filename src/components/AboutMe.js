@@ -14,9 +14,8 @@ import {
   Restaurant,
 } from 'grommet-icons';
 
-const frontEnd = ['JavaScript', 'ReactJS', 'Redux', 'HTML5', 'CSS3'];
+import Animated from './Animated'
 
-const backEnd = ['NodeJS', 'Express', 'PostgreSQL', 'Firebase'];
 
 const AboutMe = () => {
   return (
@@ -59,6 +58,10 @@ const AboutMe = () => {
         as a Psychometrician to help diagnose psychological issues and learning
         disabilities.
       </Box>
+      {/* <Box  justify="around" align= "center" direction="row">
+      <Text> test of some </Text>
+      <Animated />
+      </Box> */}
       <Box align="center" direction="row" gap="small" pad="small">
         <Certificate size="large" />I graduated from The Grace Hopper Program at
         Fullstack Academy and started my Software Engineer journey.
