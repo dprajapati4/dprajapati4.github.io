@@ -34,7 +34,7 @@ const AboutMe = () => {
       <Heading size="large" level="4">
         What technologies I have been using
       </Heading>
-      <Box direction="row" gap="large" justify="around">
+      <Box direction="row"  justify="around">
         <Box justify="center">Front End</Box>
         <Box justify="around">Back End</Box>
       </Box>

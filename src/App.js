@@ -45,9 +45,10 @@ const theme = {
 };
 
 const titles = [
-  { label: 'me' },
-  { label: 'projects' },
-  { label: 'resume' }
+  { label: 'About' },
+  { label: 'Projects' },
+  { label: 'Resume' },
+  { label: 'Contact' }
 ];
 
 function App() {
@@ -66,7 +67,7 @@ function App() {
                 Deep Prajapati
               </Anchor>
             </Box>
-            <Nav direction="row">
+            <Nav direction="row" gap="large">
               {titles.map((title) => (
                 <Link to={`/${title.label}`}> {title.label}</Link>
               ))}
@@ -87,10 +88,10 @@ function App() {
           >
             <Switch>
               <Route exact path="/" component={AboutMe} />
-              <Route exact path="/me" component={AboutMe} />
-              <Route exact path="/projects" component={Projects} />
-              <Route exact path="/resume" component={Resume} />
-              <Route exact path="/contact" component={Contact} />
+              <Route exact path="/About" component={AboutMe} />
+              <Route exact path="/Projects" component={Projects} />
+              <Route exact path="/Resume" component={Resume} />
+              <Route exact path="/Contact" component={Contact} />
             </Switch>
           </Box>
           <Box>
