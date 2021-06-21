@@ -56,9 +56,17 @@ function App() {
     <HashRouter>
       <Grommet theme={theme}>
 
-        <Box fill   >
+        <Box
+
+         height={{ min: '100vh' }}
+          border
+          responsive
+           >
           <Header pad="small" elevation="large">
-            <Box direction="row" align="center" gap="small">
+            <Box direction="row" align="center" gap="small"
+
+
+            >
               <Avatar src={`${process.env.PUBLIC_URL}/assets/DeepPhoto.png`} />
               <Anchor color="brand" href="./">
                 Deep Prajapati
@@ -75,15 +83,20 @@ function App() {
 
           <Box
             // border margin="auto" width="65%" padding="10px"
-            width="large"
-            flex
+
+
+            responsive
+            // width="large"
+            // flex
+            // alignSelf="center"
             pad="small"
-            alignSelf="center"
-            border
-            flex
+            flex={'grow'}
+            responsive
             elevation="large"
             margin="50px"
             round
+            border
+
           >
             <Switch>
               <Route exact path="/" component={AboutMe} />
@@ -93,10 +106,9 @@ function App() {
               <Route exact path="/Contact" component={Contact} />
             </Switch>
           </Box>
-          <Box>
-          <SkipLinkTarget id="connect" />
+
           <Connect />
-          </Box>
+
         </Box>
       </Grommet>
     </HashRouter>

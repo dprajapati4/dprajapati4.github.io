@@ -51,7 +51,7 @@ const Projects = ({ controls, ...rest }) => {
 
   return (
     <Grommet theme={customTheme}>
-    <Box margin="10px" gap="small" justify="around">
+    <Box margin="10px" gap="small" >
       <Heading level={4} gap="small" pad="large">
         Some things I have built
       </Heading>

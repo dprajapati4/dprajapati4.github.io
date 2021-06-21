@@ -20,7 +20,7 @@ const backEnd = ['NodeJS', 'Express', 'PostgreSQL', 'Firebase'];
 
 const AboutMe = () => {
   return (
-    <Box   >
+    <Box responsive   >
       <Heading margin="45px">
         Hey, I'm Deep Prajapati!
         <UserFemale size="large" />
