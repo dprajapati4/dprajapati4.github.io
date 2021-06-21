@@ -14,7 +14,7 @@ const experienceData = [
       'Research Assistant, NYU College of Dentistry',
     location:'COBRA Lab, Dr. Paulo Coelho - Biomaterials January 2018 - January 2019',
     role: [
-      'Trained to use 3D printing, microCT imaging, nano-indentation technology and read histological analysis ',
+      '- Trained to use 3D printing, microCT imaging, nano-indentation technology and read histological analysis ',
       ' Mentored psychometrician interns and trained them to understand and score psychological tests',
       'Collaborated with clinical staff and patients to develop between 4-5 comprehensive reports per week detailing patient history, psychometric data and treatment plans',
       " Maintained between 5 - 10 cell lines to be used by other lab members"

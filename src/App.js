@@ -45,10 +45,10 @@ const theme = {
 };
 
 const titles = [
-  { label: 'About' },
-  { label: 'Projects' },
-  { label: 'Resume' },
-  { label: 'Contact' }
+  { label: 'About', title:'About Me' },
+  { label: 'Projects', title: 'Projects' },
+  { label: 'Resume', title: 'Resume'},
+  // { label: 'Contact' }
 ];
 
 function App() {
@@ -63,13 +63,13 @@ function App() {
           <Header pad="small" elevation="large">
             <Box direction="row" align="center" gap="small">
               <Avatar src={`${process.env.PUBLIC_URL}/assets/DeepPhoto.png`} />
-              <Anchor color="brand" href="https://github.com/dprajapati4 ">
+              <Anchor color="brand" href="./components/AboutMe.js ">
                 Deep Prajapati
               </Anchor>
             </Box>
             <Nav direction="row" gap="large">
               {titles.map((title) => (
-                <Link to={`/${title.label}`}> {title.label}</Link>
+                <Link to={`/${title.label}`}> {title.title}</Link>
               ))}
             </Nav>
           </Header>
