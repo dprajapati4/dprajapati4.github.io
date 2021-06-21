@@ -5,8 +5,8 @@ import { Grow, Js, Reactjs, Node, Aid, Test, System } from 'grommet-icons';
 import experienceData from '../data/experienceData';
 const Resume = () => {
   return (
-    <Box>
-      <Heading level="3" flex alignSelf="center">
+    <Box >
+      <Heading level="3" flex alignSelf="center" >
 
         My Resume
       </Heading>
@@ -42,7 +42,7 @@ const Resume = () => {
         <Text size="small">
         Grace Hopper Program at Fullstack Academy, New York NY
           <br />
-          Certificate in Software Engineering January 2021 - April 2021
+          Certificate in Software Engineering December 2020 - April 2021
           <List
               border={false}
               data={["17-Week full stack JavaScript (ES6) web development immersive for women+."]}

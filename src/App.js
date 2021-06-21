@@ -55,11 +55,8 @@ function App() {
   return (
     <HashRouter>
       <Grommet theme={theme}>
-        <SkipLinks>
-          <SkipLink id="main" label="Main Content" />
-          <SkipLink id="footer" label="Footer" />
-        </SkipLinks>
-        <Box fill>
+
+        <Box fill   >
           <Header pad="small" elevation="large">
             <Box direction="row" align="center" gap="small">
               <Avatar src={`${process.env.PUBLIC_URL}/assets/DeepPhoto.png`} />
@@ -79,12 +76,14 @@ function App() {
           <Box
             // border margin="auto" width="65%" padding="10px"
             width="large"
-            pad="xsmall"
+            flex
+            pad="small"
             alignSelf="center"
             border
             flex
             elevation="large"
             margin="50px"
+            round
           >
             <Switch>
               <Route exact path="/" component={AboutMe} />

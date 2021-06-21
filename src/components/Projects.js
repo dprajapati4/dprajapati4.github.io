@@ -47,11 +47,7 @@ const customTheme = {
 
 
 const Projects = ({ controls, ...rest }) => {
-  const [Link, setLink] = useState({
-    github: 'https://github.com/dprajapati4/parks-n-recs-gif-app',
-    // link: 'https://deeps-personal-website.s3.us-east-2.amazonaws.com/Scrapplr.gif',
-    website: '',
-  });
+
 
   return (
     <Grommet theme={customTheme}>
@@ -62,7 +58,7 @@ const Projects = ({ controls, ...rest }) => {
       <Carousel controls={controls} {...rest}>
         {projectData.map((project) => {
           return (
-            <Box height="80vh" >
+            <Box  >
             <Box gap="xsmall" background-color="neutral-1" >
               <Heading margin="none" color="#3D138D" level="4">
                 {project.title}
@@ -89,19 +85,73 @@ const Projects = ({ controls, ...rest }) => {
           );
         })}
       </Carousel>
-      <Box direction="row" gap="small">
+
+    </Box>
+    <Box direction="row" gap="small"  justify='evenly'>
+
+
+          <Box direction="column" justify='center'  >
+          <Text size="small">PnR Gif Generator</Text>
+
+          <Box direction='row' justify='evenly'>
         <Anchor
           a11yTitle="Github link to Parks and Recreation repo"
           href="https://github.com/dprajapati4/parks-n-recs-gif-app"
           icon={<Github />}
         />
+        </Box>
+        </Box>
+
+        <Box direction="column"  >
+          <Text alignSelf='center' size="small">Cafe Code Brew</Text>
+
+          <Box direction='row'>
         <Anchor
-          a11yTitle="Full screen gif demo of the website"
-          href="https://deeps-personal-website.s3.us-east-2.amazonaws.com/Parks+and+Rec+Gif.gif"
+          a11yTitle="Github link to Cafe Code Brew repo"
+          href="https://github.com/dprajapati4/code_brew"
+          icon={<Github />}
+        />
+        <Anchor
+          a11yTitle="Live demo of Cafe Code Brew"
+          href='https://cafe-code-brew.herokuapp.com/'
           icon={<Expand />}
         />
+        </Box>
+        </Box>
+        <Box direction="column" >
+          <Text alignSelf='center' size="small">Star Hopper</Text>
+          <Box direction='row' justify='center' >
+        <Anchor
+          a11yTitle="Github link to Star Hopper repo"
+          href="https://github.com/Team-Elastigirl/Graceshopper"
+          icon={<Github />}
+        />
+        <Anchor
+          a11yTitle="Full screen gif demo of Star Hopper"
+          href='https://starhopper.herokuapp.com/'
+          icon={<Expand />}
+        />
+        </Box>
+        </Box>
+        <Box direction="column" justify='around' >
+          <Text alignSelf='center'size="small">Scrapplr</Text>
+          <Box direction='row'>
+        <Anchor
+          a11yTitle="Github link to Scrapplr repo"
+          href="https://github.com/team-antheia/scrapplr"
+          icon={<Github />}
+        />
+        <Anchor
+          a11yTitle="Full screen demo of Scrapplr"
+          href='https://scrapplr.web.app/'
+          icon={<Expand />}
+        />
+        </Box>
+        </Box>
+
+
+
       </Box>
-    </Box>
     </Grommet>
   );
 };
