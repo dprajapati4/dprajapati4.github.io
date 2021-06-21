@@ -63,7 +63,7 @@ function App() {
           <Header pad="small" elevation="large">
             <Box direction="row" align="center" gap="small">
               <Avatar src={`${process.env.PUBLIC_URL}/assets/DeepPhoto.png`} />
-              <Anchor color="brand" href="./components/AboutMe.js ">
+              <Anchor color="brand" href="./">
                 Deep Prajapati
               </Anchor>
             </Box>
