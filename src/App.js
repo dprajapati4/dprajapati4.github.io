@@ -85,11 +85,11 @@ function App() {
             // border margin="auto" width="65%" padding="10px"
 
 
-            responsive
+            // responsive
             // width="large"
             // flex
+            // pad="small"
             // alignSelf="center"
-            pad="small"
             flex={'grow'}
             responsive
             elevation="large"
