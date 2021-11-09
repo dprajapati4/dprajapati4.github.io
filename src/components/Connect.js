@@ -4,7 +4,7 @@ import { Nodes, Linkedin, Github, Medium, DocumentPdf } from 'grommet-icons';
 import { Anchor, Box, Footer, Text } from 'grommet';
 
 const Media = () => (
-  <Box direction="row" gap="medium" justify="center">
+  <Box direction="row" gap="medium"  >
     <Anchor
       a11yTitle="Connect with me on LinkedIn"
       href="https://www.linkedin.com/in/deepprajapati/"
@@ -31,19 +31,18 @@ const Media = () => (
 
 const Connect = () => {
   return (
-    <div className="footer">
-    <Footer
-    // background="#49434d"
-    pad="small"  elevation="large" gap="large">
-      <Box align="center" direction="column" gap="xsmall">
+
+    <>
+    {/* pad="small"  elevation="large" gap="large" */}
+      <Box align='center'   gap="xsmall" pad="small" round="true"  >
         <Nodes size="medium" />
         <Text alignSelf="center" size="small">
           Connect With Me
         </Text>
       </Box>
       <Media />
-    </Footer>
-    </div>
+    </>
+
   );
 };
 

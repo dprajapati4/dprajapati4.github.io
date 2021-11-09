@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Text, Heading } from 'grommet';
+import { Box, Text, Heading, Header } from 'grommet';
 import {
   Aid,
   PersonalComputer,
@@ -20,21 +20,23 @@ const backEnd = ['NodeJS', 'Express', 'PostgreSQL', 'Firebase'];
 
 const AboutMe = () => {
   return (
-    <Box responsive   >
-      <Heading margin="45px">
+    <Box responsive border  >
+      <Header alignSelf='center'>
+      <Heading margin="45px"  size='medium' >
         Hey, I'm Deep Prajapati!
         <UserFemale size="large" />
       </Heading>
-      <Box align="center" direction="row" gap="small">
+      </Header>
+      <Box alignSelf="center" direction="row" gap="small">
         <PersonalComputer size="large" /> I am a New York City based Software
         Engineer who is passionate about finding simple solutions to complex
         problems.
       </Box>
 
-      <Heading size="large" level="4">
+      <Heading size="large" level="4" gap='small'>
         What technologies I have been using
       </Heading>
-      <Box direction="row"  justify="around">
+      <Box alignContent ='start' direction="row"  justify="around">
         <Box justify="center">Front End</Box>
         <Box justify="around">Back End</Box>
       </Box>

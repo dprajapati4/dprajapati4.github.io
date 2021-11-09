@@ -1,5 +1,5 @@
 import React from 'react';
-import { HashRouter, Route, Switch,Link } from 'react-router-dom';
+import { HashRouter, Route, Switch, Link } from 'react-router-dom';
 import {
   Grommet,
   Box,
@@ -10,7 +10,7 @@ import {
   Anchor,
   Nav,
   Header,
-
+  Footer,
 } from 'grommet';
 
 // import Navbar from './components/Navbar';
@@ -18,6 +18,7 @@ import Connect from './components/Connect';
 import Projects from './components/Projects';
 import Resume from './components/Resume';
 import AboutMe from './components/AboutMe';
+import About from './components/About';
 import Contact from './components/Contact';
 import Navbar from './components/Navbar';
 
@@ -45,9 +46,9 @@ const theme = {
 };
 
 const titles = [
-  { label: 'About', title:'About Me' },
+  { label: 'About', title: 'About Me' },
   { label: 'Projects', title: 'Projects' },
-  { label: 'Resume', title: 'Resume'},
+  { label: 'Resume', title: 'Resume' },
   // { label: 'Contact' }
 ];
 
@@ -55,61 +56,51 @@ function App() {
   return (
     <HashRouter>
       <Grommet theme={theme}>
-
-        <Box
-
-         height={{ min: '100vh' }}
-          border
-          responsive
-           >
-          <Header pad="small" elevation="large">
-            <Box direction="row" align="center" gap="small"
-
-
-            >
-              <Avatar src={`${process.env.PUBLIC_URL}/assets/DeepPhoto.png`} />
-              <Anchor color="brand" href="./">
-                Deep Prajapati
-              </Anchor>
-            </Box>
-            <Nav direction="row" gap="large">
-              {titles.map((title) => (
-                <Link to={`/${title.label}`}> {title.title}</Link>
-              ))}
-            </Nav>
-          </Header>
-
-
-
+        <Box fill alignContent="center" height={{ min: '100vh' }}>
           <Box
-            // border margin="auto" width="65%" padding="10px"
-
-
-            // responsive
-            // width="large"
-            // flex
-            // pad="small"
-            // alignSelf="center"
-            flex={'grow'}
+            height={{ min: '100vh' }}
             responsive
+            pad="small"
+            align="center"
             elevation="large"
-            margin="50px"
-            round
-            border
-
+            // border
           >
+            <Header pad="small" width="xxlarge">
+              <Box direction="row" align="center" gap="small">
+                <Avatar
+                  src={`${process.env.PUBLIC_URL}/assets/DeepPhoto.png`}
+                />
+                <Anchor color="brand" href="./">
+                  Deep Prajapati
+                </Anchor>
+              </Box>
+              <Nav direction="row" gap="large">
+                {titles.map((title) => (
+                  <Link to={`/${title.label}`}> {title.title}</Link>
+                ))}
+              </Nav>
+            </Header>
+            <Box fill="vertical">
+              <About />
+              <AboutMe />
+              <Projects />
+              <Resume />
+
+              {/*
             <Switch>
               <Route exact path="/" component={AboutMe} />
               <Route exact path="/About" component={AboutMe} />
               <Route exact path="/Projects" component={Projects} />
               <Route exact path="/Resume" component={Resume} />
               <Route exact path="/Contact" component={Contact} />
-            </Switch>
+            </Switch> */}
+            </Box>
+            <Footer elevation="medium" align="end" round>
+              <Connect />
+            </Footer>
           </Box>
-
-          <Connect />
-
         </Box>
+        {/* </div> */}
       </Grommet>
     </HashRouter>
   );
