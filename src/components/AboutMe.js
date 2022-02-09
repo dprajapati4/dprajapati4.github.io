@@ -19,7 +19,7 @@ import Animated from './Animated'
 
 const AboutMe = () => {
   return (
-    <Box  fill>
+    <Box  fill >
       <Heading margin="45px">
         Hey, I'm Deep Prajapati!
         <UserFemale size="large" />

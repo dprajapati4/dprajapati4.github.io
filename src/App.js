@@ -23,7 +23,7 @@ import Navbar from './components/Navbar';
 
 const theme = {
   global: {
-    
+
     font: {
       family: 'Arvo',
       size: '15px',
@@ -61,7 +61,7 @@ function App() {
           <SkipLink id="footer" label="Footer" />
         </SkipLinks>
         <Box fill background="url(background)">
-          <Header pad="small" elevation="large">
+          {/* <Header pad="small" elevation="large">
             <Box direction="row" align="center" gap="small">
               <Avatar src={`${process.env.PUBLIC_URL}/assets/DeepPhoto.png`} />
               <Anchor color="brand" href="https://github.com/dprajapati4 ">
@@ -73,19 +73,21 @@ function App() {
                 <Link to={`/${title.label}`}> {title.label}</Link>
               ))}
             </Nav>
-          </Header>
+          </Header> */}
 
 
 
           <Box
             // border margin="auto" width="65%" padding="10px"
             width="large"
-            pad="xsmall"
+            pad="20px"
             alignSelf="center"
-            border
+            border={{ color: 'grey', size: '6px', radius:'10%' }}
             flex
             elevation="large"
-            margin="50px"
+            margin="20px"
+            background='white'
+            round
           >
             <Switch>
               <Route exact path="/" component={AboutMe} />
